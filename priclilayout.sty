@@ -1,0 +1,25 @@
+%!TEX encoding = UTF-8 Unicode
+
+\ProvidesPackage{priclilayout}
+
+\newcommand{\swaphmargins}{
+\newlength{\tmplength}
+\setlength{\tmplength}{\oddsidemargin}
+\setlength{\oddsidemargin}{\evensidemargin}
+\setlength{\evensidemargin}{\tmplength}}
+
+\newcommand{\setdispacing}[1][0pt]{\setlength{\abovedisplayskip}{#1}
+\setlength{\belowdisplayskip}{#1}
+\setlength{\abovedisplayshortskip}{#1}
+\setlength{\belowdisplayshortskip}{#1}}
+
+% set all margins of equations
+\newcommand{\displayskip}[1]{%
+\setlength{\abovedisplayskip}{#1}
+\setlength{\belowdisplayskip}{#1}
+\setlength{\abovedisplayshortskip}{#1}
+\setlength{\belowdisplayshortskip}{#1}}
+
+
+
+\endinput
